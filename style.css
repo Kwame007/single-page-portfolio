@@ -92,6 +92,83 @@ body{
   }
 }
 
+/* services section  */
+.services{
+  padding: 1rem;
+  margin-bottom: 6.25rem;
+
+  & .services__cards{
+  display: grid;
+  gap: 1.5rem;
+
+    & .services__card{
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      border-radius: 0.5rem;
+      
+      & .services__card--content{
+          padding-left:  1.75rem;
+          padding-bottom:  1.75rem;
+          height: fit-content;
+
+      & h2{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--light-cream-color);
+        line-height: auto;
+        letter-spacing: 0px;
+      }
+    }
+  
+  }
+
+    & .services__card--group{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.75rem;
+    }
+
+    & .services__card img{
+        position: absolute;
+        top: 1.75rem;
+        right: 1.75rem;
+    }
+
+  & .services__card--design{
+      background-color: var(--galactic-blue-color);
+      height: 22.75rem;
+    }
+
+  .services__card--ux,
+  .services__card--apps{
+        height: 11.375rem;
+      }
+
+  .services__card--illustration,
+  .services__card--photography,
+  .services__card--motion{
+     height: 9.875rem;
+    }
+  .services__card--ux{
+    background-color: var(--summer-yellow-color);
+    }
+  .services__card--apps{
+    background-color: var(--pink-color);
+    }
+  .services__card--illustration{
+    background-color: var(--light-red-color);
+    }
+  .services__card--photography{
+    background-color: var(--cyan-color);
+    }
+  .services__card--motion{
+    background-color: var(--dark-purple-color);
+    }
+  } 
+}
+
+
 
 
 /* media queries */
@@ -110,6 +187,22 @@ body{
 }
     & p{
   max-width: 573px;
+  }
+}
+
+/* services */
+.services,.about,.my-work{
+  margin-bottom: 7.5rem;
+}
+.services__cards,.about,.contact,.header,.footer__content{
+  padding: 1.75rem;
+}
+.services__cards{
+  grid-template-columns: repeat(2, auto);
+
+  & .services__card--design{
+  grid-column: 1 / 2;
+  grid-row: span 2;
   }
 }
 
@@ -133,7 +226,24 @@ body{
     }
 
   }
+/* services */
+.services{
+  margin-bottom: 8.5rem;
 
+  & .services__cards{
+  grid-template-columns: repeat(3, auto);
+
+    & .services__card--photography{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    height: 11.375rem;
+    }
+
+    & .services__card--illustration{
+    grid-column-start: 2;
+    }
+  }
+}
 
 }
 
