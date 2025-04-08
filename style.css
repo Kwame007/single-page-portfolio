@@ -350,6 +350,9 @@ body{
   }
 }
 
+.footer{
+  padding: 0 1rem 1rem 1rem;
+}
 
 
 
@@ -425,6 +428,10 @@ body{
        }
       }
     }
+  }
+
+    .footer{
+    padding: 0;
   }
 }
 
@@ -519,6 +526,10 @@ body{
         }
       }
     }
+  }
+
+   .footer{
+  padding: 0;
   }
 }
 
