@@ -232,6 +232,69 @@ body{
   }
 }
 
+/* my work section */
+.my-work{
+  margin-bottom: 6.25rem;
+
+  & .my-work__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  &.my-work__content h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: auto;
+  letter-spacing: 0px;
+}
+
+  & .my-work__slider{
+  position: relative;
+  width: 100%;
+  height: 11.25rem;
+  overflow: scroll;
+
+  & .my-work__slider-images{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  gap: 0.938rem;
+  }
+
+  & .my-work__slider-images img{
+   width: 270px;
+   height: auto;
+   border-radius: 0.5rem;
+  }
+}
+
+& .my-work_buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+& .my-work__button{
+  background-color: var(--black-color);
+  border-radius: 50%;
+   width: 4rem;
+  height: 4rem;
+  border: none;
+  cursor: pointer;
+
+  &:hover{
+    background-color: var(--galactic-blue-color);
+  }
+    }
+  }
+}
+
+
 
 
 /* media queries */
@@ -294,7 +357,19 @@ body{
   }
 }
 
+/* my work */
+.my-work{
 
+  & .my-work__content{
+    & .my-work__slider{
+      height: 22.5rem;
+      & .my-work__slider-images img{
+        width: 540px;
+        height: auto;
+       }
+      }
+    }
+  }
 }
 
 /* desktop */
@@ -357,6 +432,19 @@ body{
   }
 }
 
+/* my work */
+.my-work{
+  margin-bottom: 7.5rem;  
+
+  & .my-work__content{
+    gap:7.5rem
+  
+    & h2{
+    font-size: 40px;
+    line-height: 40px;
+    }
+  }
+}
 
 }
 
