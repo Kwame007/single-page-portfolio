@@ -48,6 +48,7 @@ body{
   color: var(--light-cream-color);
   height: 44px;
   width: 176px;
+  font-weight: 700;
   border-radius: 1.75rem;
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -70,24 +71,25 @@ body{
     flex-direction: column;
     align-items: center;
   
-    &  .hero__content{
+    &  h1{
     color: var(--black-color);
     font-size: 2.25rem;
-    font-weight: bold;
+    font-weight: 700;
     line-height: auto;
     letter-spacing: 0px;
     text-align: center;
+    max-width: 343px;
     margin-bottom: 1rem;
     }
   
     & p{
     color: var(--medium-brown-color);
     font-size: 1rem;
-    font-weight:400;
+    font-weight:500;
     line-height: 1.625rem;
     letter-spacing: 0px;
     text-align: center;
-    max-width: 285px;
+    max-width: 275px;
     margin:0 auto;
     }
   }
@@ -99,8 +101,8 @@ body{
   margin-bottom: 6.25rem;
 
   & .services__cards{
-  display: grid;
-  gap: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
 
     & .services__card{
       position: relative;
@@ -115,28 +117,27 @@ body{
 
       & h2{
         font-size: 1.5rem;
-        font-weight: bold;
+        font-weight: 700;
         color: var(--light-cream-color);
         line-height: auto;
         letter-spacing: 0px;
+        }
       }
     }
-  
-  }
 
     & .services__card--group{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1.75rem;
-    }
+      }
 
     & .services__card img{
         position: absolute;
         top: 1.75rem;
         right: 1.75rem;
-    }
+      }
 
-  & .services__card--design{
+    & .services__card--design{
       background-color: var(--galactic-blue-color);
       height: 22.75rem;
     }
@@ -193,7 +194,7 @@ body{
 
    &.about__text h2{
     font-size: 1.625rem;
-    font-weight: bold;
+    font-weight: 700;
     line-height: auto;
     letter-spacing: 0px;
     max-width: 343px;
@@ -202,7 +203,7 @@ body{
 
   &.about__text p{
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     max-width: 343px;
     line-height: 1.625rem;
     letter-spacing: 0px;
@@ -218,6 +219,7 @@ body{
   width: 176px;
   border-radius: 1.75rem;
   font-size: 0.875rem;
+  font-weight: 700;
   line-height: 1.5rem;
   letter-spacing: 0px;
   border: none;
@@ -242,10 +244,10 @@ body{
 
   &.my-work__content h2{
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: auto;
   letter-spacing: 0px;
-}
+  }
 
   & .my-work__slider{
   position: relative;
@@ -267,23 +269,23 @@ body{
    width: 270px;
    height: auto;
    border-radius: 0.5rem;
+    }
   }
-}
 
-& .my-work_buttons{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
+  & .my-work_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
 
-& .my-work__button{
-  background-color: var(--black-color);
-  border-radius: 50%;
-   width: 4rem;
-  height: 4rem;
-  border: none;
-  cursor: pointer;
+  & .my-work__button{
+    background-color: var(--black-color);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    cursor: pointer;
 
   &:hover{
     background-color: var(--galactic-blue-color);
@@ -303,7 +305,7 @@ body{
   justify-content: center;
   background-color: var(--black-color);
   color: var(--light-cream-color);
-  padding: 2rem;
+  padding: 3rem 1.5rem;
   border-radius: 0.625rem;
   text-align: center;
 
@@ -311,29 +313,32 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+
+    & h4{
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: auto;
+    letter-spacing: 0px;
+    margin-bottom: 1.5rem;
+    }
+    
+    & p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+    letter-spacing: 0px;
+    max-width: 295px;
+    margin-bottom: 1.5rem;
+    }
 }
 
-  & h4{
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: auto;
-  letter-spacing: 0px;
-  margin-bottom: 1.5rem;
-}
-
- & p{
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.625rem;
-  letter-spacing: 0px;
-  margin-bottom: 1.5rem;
-}
 
   & .contact__button{
   background-color: var(--light-red-color);
   color: var(--light-cream-color);
   height: 44px;
   width: 176px;
+  font-weight: 700;
   border-radius: 1.75rem;
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -349,7 +354,7 @@ body{
 }
 
 .footer{
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1rem 2rem 1rem;
 }
 
 
@@ -361,6 +366,19 @@ body{
   margin-bottom: 4rem;
   }
 
+
+  .header button,.footer__button{
+      height: 3.5rem;
+      width: 14.25rem;
+      font-size: 1rem;
+    }
+
+  .header img,.footer__logo{
+    width: 64px;
+    height: 64px;
+  }
+  
+
   /* hero */
 .hero{
    margin-bottom: 4rem;
@@ -371,6 +389,7 @@ body{
         font-size: 2.75rem;
         line-height: auto;
         letter-spacing: 0px;
+        max-width: 100%;
         margin-bottom: 1.688rem;
     }
         & p{
@@ -402,34 +421,41 @@ body{
 
   .about__content{
     flex-direction: row;
+    justify-content: space-between;
     
     & .about__text{
       text-align: left;
 
       &.about__text h2{
-        font-size: 2.75rem;
-        font-weight: bold;
+        font-size: 2rem;
+        font-weight: 700;
         line-height: auto;
         letter-spacing: 0px;
-        max-width: 690px;
+        max-width: 339px;
         margin-bottom: 1.5rem;
-    } 
+      } 
 
-    &.about__text p{
-      font-size: 1rem;
-      font-weight: 400;
-      max-width: 343px;
-      line-height: 1.625rem;
-      letter-spacing: 0px;
-      margin-bottom: 1.5rem;
-      color: var(--medium-brown-color)
-      }   
+      &.about__text p{
+        font-size: 1.125rem;
+        font-weight: 500;
+        max-width: 343px;
+        line-height: 1.75rem;
+        letter-spacing: 0px;
+        margin-bottom: 1.5rem;
+        color: var(--medium-brown-color)
+        }   
+
+      & .about__button{
+        height: 3.5rem;
+        width: 14.25rem;
+        font-size: 1rem;
+      }
     }
 
     & .about__image{
       width: 22.75rem;
       height: auto;
-      margin-left: -3.75rem;
+      margin-left: -4.75rem;
     }
   }
 }
@@ -442,10 +468,17 @@ body{
 
     &.my-work__content h2{
       font-size: 2rem;
+      font-weight: 700;
+      line-height: auto;
+      letter-spacing: 0px;
     }
 
     & .my-work__slider{
       height: 22.5rem;
+
+      & .my-work__slider-images{
+        gap: 1.875rem;
+    }
 
       & .my-work__slider-images img{
         width: 540px;
@@ -455,9 +488,38 @@ body{
     }
   }
 
+  .contact{
+
+    & .contact__content{
+      padding: 56px 75px 64px 75px;
+      & .contact__text{
+
+        
+
+        & h4{
+        font-size: 2rem;
+        margin-bottom: 1.625rem;
+        }
+    
+        & p{
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1.625rem;
+        letter-spacing: 0px;
+        max-width: 33.75rem;
+        margin-bottom: 1.5rem;
+        }
+      }
+    & .contact__button{
+      height: 3.5rem;
+      width: 14.25rem;
+    }
+  }
+  
     .footer{
     padding: 0;
   }
+
 }
 
 /* desktop */
@@ -477,6 +539,7 @@ body{
         font-size: 3.5rem;
         line-height: auto;
         letter-spacing: 0px;
+        max-width: 100%;
        }
 
         & p{
@@ -517,7 +580,7 @@ body{
  & .about__text{
       &.about__text h2{
         font-size: 2.5rem;
-        font-weight: bold;
+        font-weight: 700;
         line-height: auto;
         letter-spacing: 0px;
         max-width: 540px;
@@ -526,7 +589,7 @@ body{
 
     &.about__text p{
       font-size: 1.125rem;
-      font-weight: 400;
+      font-weight: 500;
       max-width: 540px;
       line-height: 1.625rem;
       letter-spacing: 0px;
@@ -536,7 +599,7 @@ body{
  }
 
   & .about__image{
-      width: 22.75rem;
+      width: 27.813rem;
       height: auto;
       margin-left: 0;
     }
@@ -563,6 +626,7 @@ body{
   & .contact__content{
     flex-direction: row;
     justify-content: space-between;
+    padding: 80px 95px 80px 65px;
 
     & .contact__text{
       align-items: flex-start;
@@ -573,11 +637,15 @@ body{
         }
       }
     }
+
+    & .contact__button{
+      height: 56px;
+      width: 228px;
+    }
   }
 
    .footer{
   padding: 0;
+    }
   }
 }
-
-  
